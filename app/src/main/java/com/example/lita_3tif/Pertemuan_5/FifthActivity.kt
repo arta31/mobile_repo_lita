@@ -34,6 +34,9 @@ class FifthActivity : AppCompatActivity() {
             subtitle = "Ini adalah subtitle" //optional
             setDisplayHomeAsUpEnabled(true)
             setDisplayShowHomeEnabled(true)
+
+            setHomeAsUpIndicator(R.drawable.ic_back)
+
         }
         binding.bthWebView.setOnClickListener {
             startActivity(Intent (this,
