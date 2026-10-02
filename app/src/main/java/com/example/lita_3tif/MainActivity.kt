@@ -7,6 +7,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.lita_3tif.Pertemuan_4.FourthActivity
+import com.example.lita_3tif.Pertemuan_5.FifthActivity
 import com.example.lita_3tif.databinding.ActivityMainBinding
 class MainActivity : AppCompatActivity() {
 
@@ -33,6 +34,10 @@ class MainActivity : AppCompatActivity() {
             i.putExtra("from", "Rumbai")
             i.putExtra("age", 25)
 
+            startActivity(i)
+        }
+        binding.btnToFifth.setOnClickListener {
+            val i = Intent(this, FifthActivity::class.java)
             startActivity(i)
         }
     }
