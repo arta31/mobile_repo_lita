@@ -1,4 +1,4 @@
-package com.example.lita_3tif.Pertemuan_5
+package com.example.lita_3tif.Home.Pertemuan_5
 
 import android.content.Intent
 import android.os.Bundle
@@ -9,10 +9,8 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import com.example.lita_3tif.Pertemuan_4.FourthActivity
 import com.example.lita_3tif.R
 import com.example.lita_3tif.databinding.ActivityFifthBinding
-import com.example.lita_3tif.databinding.ActivityFourthBinding
 
 class FifthActivity : AppCompatActivity() {
     private lateinit var binding: ActivityFifthBinding

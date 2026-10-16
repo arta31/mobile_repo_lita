@@ -1,4 +1,4 @@
-package com.example.lita_3tif.Pertemuan_3
+package com.example.lita_3tif.Home.Pertemuan_3
 
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge

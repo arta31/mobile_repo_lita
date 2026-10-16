@@ -1,4 +1,4 @@
-package com.example.lita_3tif.Pertemuan_4
+package com.example.lita_3tif.Home.Pertemuan_4
 
 import android.content.Intent // 1. Tambahkan import Intent
 import android.os.Bundle
@@ -7,7 +7,7 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import com.example.lita_3tif.Pertemuan_3.ThirdResultActivity
+import com.example.lita_3tif.Home.Pertemuan_3.ThirdResultActivity
 import com.example.lita_3tif.databinding.ActivityFourthBinding // 2. Import View Binding
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import com.google.android.material.snackbar.Snackbar

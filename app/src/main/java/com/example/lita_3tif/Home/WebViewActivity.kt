@@ -1,15 +1,13 @@
-package com.example.lita_3tif.Pertemuan_5
+package com.example.lita_3tif.Home.Pertemuan_5
 
 import android.os.Bundle
 import android.view.MenuItem
 import android.webkit.WebViewClient
-import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.lita_3tif.R
-import com.example.lita_3tif.databinding.ActivityFifthBinding
 import com.example.lita_3tif.databinding.ActivityWebViewBinding
 
 class WebViewActivity : AppCompatActivity() {

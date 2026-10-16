@@ -34,5 +34,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
+        android:textColor="#610E0E"
+        android:backgroundTint="#DCD9AC"
         android:text="Login" />
 </LinearLayout>
