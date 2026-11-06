@@ -1,27 +1,27 @@
 package com.example.lita_3tif.Message
 
+
 import android.content.Context
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ArrayAdapter
 import com.bumptech.glide.Glide
+import com.example.lita_3tif.Home.Pertemuan_5.FifthActivity
 import com.example.lita_3tif.databinding.ItemMessageBinding
+import com.google.android.material.snackbar.Snackbar
 
 class MessageAdapter(
     context: Context,
-    private val messages: List<MessageModel>
-) : ArrayAdapter<MessageModel>(context, 0, messages) {
+    private val  Messages: List<MessageModel>
+) : ArrayAdapter<MessageModel>(context, 0, Messages) {
 
     override fun getView(position: Int, convertView: View?, parent: ViewGroup): View {
-        // Reuse view jika convertView tidak null (opsional tapi disarankan agar performa hemat memory)
-        val binding = if (convertView == null) {
-            ItemMessageBinding.inflate(LayoutInflater.from(context), parent, false)
-        } else {
-            ItemMessageBinding.bind(convertView)
-        }
+        val binding: ItemMessageBinding = ItemMessageBinding.inflate(LayoutInflater.from(context), parent, false)
+        val view = binding.root
 
-        val data = messages[position]
+        val data = Messages[position]
 
         // Binding data ke View
         binding.textSender.text = data.senderName
@@ -32,6 +32,15 @@ class MessageAdapter(
             .load(data.avatarUrl)
             .into(binding.avatarImg)
 
-        return binding.root
+        view.setOnClickListener {
+            val i= Intent(context, FifthActivity::class.java)
+            i.putExtra("nama", data.senderName) //memindahkan data ke activity yujuan
+            Snackbar.make(
+                parent,
+                "Pesan dari ${data.senderName}: ${data.messageText} ${data.time}",
+                Snackbar.LENGTH_SHORT
+            ).show()
+        }
+        return view
     }
 }

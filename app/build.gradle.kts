@@ -38,6 +38,7 @@ android {
 }
 
 dependencies {
+    implementation("androidx.gridlayout:gridlayout:1.0.0")
     implementation(libs.androidx.activity.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.androidx.constraintlayout)
@@ -48,4 +49,5 @@ dependencies {
     androidTestImplementation(libs.androidx.junit)
     implementation ("com.github.bumptech.glide:glide:5.0.9")
     annotationProcessor ("com.github.bumptech.glide:compiler:4.16.0")
+
 }
