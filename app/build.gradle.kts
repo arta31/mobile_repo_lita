@@ -50,4 +50,5 @@ dependencies {
     implementation ("com.github.bumptech.glide:glide:5.0.9")
     annotationProcessor ("com.github.bumptech.glide:compiler:4.16.0")
     implementation("androidx.recyclerview:recyclerview:1.4.0")
+    implementation("com.tbuonomo:dotsindicator:5.1.0")
 }

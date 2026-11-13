@@ -5,4 +5,6 @@
 
     <color name="TextColor">#FFFFF0</color>
     <color name="ripple">#1F0F0F</color>
+
+    <color name="abu_gelap">#555555</color>
 </resources>
