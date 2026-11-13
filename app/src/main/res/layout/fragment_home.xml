@@ -79,6 +79,16 @@
             app:layout_gravity="fill_horizontal" />
 
         <Button
+            android:id="@+id/btnToEleventh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#610E0E"
+            android:text="Pertemuan 11"
+            android:textColor="#C1B9B9"
+            app:layout_gravity="fill_horizontal"
+            />
+
+        <Button
             android:id="@+id/btnLogout"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
